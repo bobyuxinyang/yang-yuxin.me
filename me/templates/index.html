@@ -3,7 +3,8 @@
 <head>
     <title>嗨，我是杨裕欣</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/static/css/bootstrap-esponsive.min.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap-responsive.min.css"/>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 </head>
 <body>
 <style type="text/css">
@@ -14,6 +15,9 @@
         -webkit-box-shadow:3px 3px 4px #ccc;
         box-shadow:3px 3px 4px #ccc;  }
 </style>
+<script>
+    google.load("jquery", "1.7.1");
+</script>
 
 <div class="container">
     <section>
@@ -43,6 +47,7 @@
             <li>coding和技术</li>
             <ul>
                 <li><span class="date-prefix">2012-5-15</span>用bootstrap试着搭建yang.yuxin.me</li>
+                <li><span class="date-prefix">2012-5-16</span>用ga在天朝实在慢，于是用给这个地方加了cnzz的统计</li>
             </ul>
             <li>看书</li>
             <li>拍照</li>
@@ -95,5 +100,15 @@
         <a href="https://github.com/YuxinYang/yang-yuxin.me">在Github上看看这个主页的源码</a>
     </section>
 </div>
+<script src="http://s22.cnzz.com/stat.php?id=4137751&web_id=4137751" language="JavaScript"></script>
+<script>
+    $(function () {
+        $('a').each(function (index, item) {
+           if ($(item).prop('title') == '站长统计') {
+               $(item).hide();
+           }
+        });
+    })
+</script>
 </body>
 </html>
