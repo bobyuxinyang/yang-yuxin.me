@@ -6,7 +6,7 @@ from me import app
 @app.route('/', methods=['GET'])
 def g_index():
     user_agent = request.headers.get('User-Agent')
-    if 'Mobile' in user_agent:
+    if not 'Mobile' in user_agent:
         return render_template('mobile-index.html')
     else:
         return render_template('index.html')
